@@ -4,23 +4,23 @@ import QuickLinkButton from './QuickLinkButton';
 const dummy_links = [
 	{
 		title: 'Link 1',
-		link: 'www.google.com',
+		link: 'https://www.google.com/',
 	},
 	{
 		title: 'Link 2',
-		link: 'www.google.com',
+		link: 'https://www.google.com/',
 	},
 	{
 		title: 'Link 3',
-		link: 'www.google.com',
+		link: 'https://www.google.com/',
 	},
 	{
 		title: 'Link 4',
-		link: 'www.google.com',
+		link: 'https://www.google.com/',
 	},
 	{
 		title: 'Link 5',
-		link: 'www.google.com',
+		link: 'https://www.google.com/',
 	},
 ];
 function App() {
@@ -30,7 +30,7 @@ function App() {
 				title={'Quick links'}
 				linkList={dummy_links}
 				onLinkClick={(link) => {
-					console.log(link);
+					window.open(link, '_blank'); // For opening the link in new window
 				}}
 			/>
 		</div>
